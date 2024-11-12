@@ -5,21 +5,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LifeThought International</title>
 		<link rel="stylesheet" href="src/output.css" />
-		<link rel="icon" type="image/png" href="./src/images/Logo.png">
+		<link rel="icon" type="image/png" href="./src/images/Logo.png" />
 	</head>
 
 	<body class="text-gray-800 font-sans">
 		<!-- Nav Bar -->
-		<nav class="topnav bg-green-50 text-black fixed top-0 left-0 right-0 drop-shadow-xl">
-			<!-- <img src="./src/images/HorizontalLogo.png" class="max-w-80"> -->
-			<a class="home" href="#home">Home</a>
-			<a href="#join">Join Us</a>
-			<a href="#approach">Our Approach</a>
-			<a href="#mission">Our Mission</a>
+		<nav
+			class="bg-green-50 text-black fixed top-0 left-0 right-0 drop-shadow-xl z-50"
+		>
+			<div class="flex items-center justify-between px-6 py-4">
+				<a href="#header" class="text-xl font-semibold">LifeThought</a>
+				<!-- Hamburger Icon -->
+				<button
+					id="menu-button"
+					class="block md:hidden text-2xl focus:outline-none"
+				>
+					&#9776;
+				</button>
+				<!-- Desktop Links -->
+				<div class="hidden md:flex space-x-6">
+					<a href="#header" class="hover:text-green-600">Home</a>
+					<a href="#join" class="hover:text-green-600">Join Us</a>
+					<a href="#approach" class="hover:text-green-600">Our Approach</a>
+					<a href="#mission" class="hover:text-green-600">Our Mission</a>
+				</div>
+			</div>
+			<!-- Mobile Links -->
+			<div
+				id="mobile-menu"
+				class="hidden flex-col space-y-4 px-6 py-4 md:hidden bg-green-50"
+			>
+				<a href="#header" class="hover:text-green-600 p-1">Home</a>
+				<a href="#join" class="hover:text-green-600 p-1">Join Us</a>
+				<a href="#approach" class="hover:text-green-600 p-1">Our Approach</a>
+				<a href="#mission" class="hover:text-green-600 p-1">Our Mission</a>
+			</div>
 		</nav>
 
 		<!-- Header Section -->
 		<header
+			id="header"
 			class="flex flex-col items-center justify-center bg-[#33804F] pt-32 pb-16 px-6 shadow-lg text-white"
 		>
 			<h1 class="text-6xl font-bold mb-4 animate-fade-in">
@@ -39,7 +64,8 @@
 
 		<!-- Our Mission Section -->
 		<section
-			id="mission" class="flex flex-col items-center justify-center bg-green-50 py-14 px-6"
+			id="mission"
+			class="flex flex-col items-center justify-center bg-green-50 py-14 px-6"
 		>
 			<h1 class="text-4xl font-semibold mb-4">Our Mission</h1>
 			<p class="text-center max-w-2xl text-lg">
@@ -51,7 +77,8 @@
 
 		<!-- Our Approach Section -->
 		<section
-			id="approach" class="flex flex-col items-center justify-center bg-teal-50 py-14 px-6"
+			id="approach"
+			class="flex flex-col items-center justify-center bg-teal-50 py-14 px-6"
 		>
 			<h1 class="text-4xl font-semibold mb-4">Our Approach</h1>
 			<p class="text-center max-w-2xl text-lg">
@@ -65,7 +92,8 @@
 
 		<!-- Join Us Section -->
 		<section
-			id="join" class="flex flex-col items-center justify-center bg-[#AF5851] py-14 px-6 text-white"
+			id="join"
+			class="flex flex-col items-center justify-center bg-[#AF5851] py-14 px-6 text-white"
 		>
 			<h1 class="text-4xl font-semibold mb-4">Join Us</h1>
 			<p class="text-center max-w-2xl text-lg">
@@ -104,5 +132,15 @@
 				>
 			</p>
 		</footer>
+
+		<!-- JavaScript for Mobile Menu Toggle -->
+		<script>
+			const menuButton = document.getElementById('menu-button');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			menuButton.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+			});
+		</script>
 	</body>
 </html>
