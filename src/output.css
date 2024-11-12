@@ -554,6 +554,22 @@ video {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -572,6 +588,10 @@ video {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-80 {
+  max-width: 20rem;
 }
 
 .transform {
@@ -595,29 +615,19 @@ video {
   background-color: rgb(51 128 79 / var(--tw-bg-opacity));
 }
 
-.bg-green-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
-}
-
-.bg-orange-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 247 237 / var(--tw-bg-opacity));
-}
-
-.bg-teal-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 253 250 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#AF5851\] {
   --tw-bg-opacity: 1;
   background-color: rgb(175 88 81 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2E75B6\] {
+.bg-green-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(46 117 182 / var(--tw-bg-opacity));
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+}
+
+.bg-teal-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 250 / var(--tw-bg-opacity));
 }
 
 .px-6 {
@@ -630,8 +640,16 @@ video {
   padding-bottom: 3.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pb-16 {
   padding-bottom: 4rem;
 }
 
@@ -671,6 +689,11 @@ video {
   font-weight: 600;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-300 {
   --tw-text-opacity: 1;
   color: rgb(147 197 253 / var(--tw-text-opacity));
@@ -696,6 +719,38 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.home {
+  background-color: #2E75B6;
+  color: white;
+}
+
+.topnav a.home:hover {
+  background-color: #2e74b6c4;
+  color: white;
 }
 
 .hover\:underline:hover {
