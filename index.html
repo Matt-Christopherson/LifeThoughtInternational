@@ -1,3 +1,6 @@
+<!-- Tailwind.css was used for styling. Tailwind allows you to use inline styling by assigning classes to each HTML element. -->
+<!-- To learn more about how to use Tailwind, go to https://tailwindcss.com/docs/installation -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,10 +14,10 @@
 	<body class="text-gray-800 font-sans">
 		<!-- Nav Bar -->
 		<nav
-			class="bg-green-50 text-black fixed top-0 left-0 right-0 drop-shadow-xl z-50"
+			class="bg-white text-black fixed top-0 left-0 right-0 drop-shadow-xl z-50"
 		>
 			<div class="flex items-center justify-between px-6 py-4">
-				<a href="#header" class="text-xl font-semibold">LifeThought</a>
+				<a href="#header"><img src="./src/images/HorizontalLogo.png" class="max-w-60"></a>
 				<!-- Hamburger Icon -->
 				<button
 					id="menu-button"
@@ -33,7 +36,7 @@
 			<!-- Mobile Links -->
 			<div
 				id="mobile-menu"
-				class="hidden flex-col space-y-4 px-6 py-4 md:hidden bg-green-50"
+				class="hidden flex-col space-y-4 px-6 py-4 md:hidden bg-white"
 			>
 				<a href="#header" class="hover:text-green-600 p-1">Home</a>
 				<a href="#join" class="hover:text-green-600 p-1">Join Us</a>
@@ -45,7 +48,7 @@
 		<!-- Header Section -->
 		<header
 			id="header"
-			class="flex flex-col items-center justify-center bg-[#33804F] pt-32 pb-16 px-6 shadow-lg text-white"
+			class="flex flex-col items-center justify-center bg-[#33804F] pt-52 pb-20 px-6 shadow-lg text-white"
 		>
 			<h1 class="text-6xl font-bold mb-4 animate-fade-in">
 				LifeThought International
@@ -65,29 +68,41 @@
 		<!-- Our Mission Section -->
 		<section
 			id="mission"
-			class="flex flex-col items-center justify-center bg-green-50 py-14 px-6"
+			class="flex flex-col md:flex-row items-center justify-center bg-white py-8 px-5"
 		>
-			<h1 class="text-4xl font-semibold mb-4">Our Mission</h1>
-			<p class="text-center max-w-2xl text-lg">
-				We envision a world where every individual, regardless of their location
-				or socioeconomic status, has the skills and support to be a positive
-				force for change in their community.
-			</p>
+			<img
+				src="./src/images/Panama 4.jpg"
+				class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl"
+			/>
+			<section class="flex flex-col items-center md:items-start justify-center">
+				<h1 class="text-4xl font-semibold mb-4">Our Mission</h1>
+				<p class="text-center md:text-left max-w-2xl text-lg">
+					We envision a world where every individual, regardless of their
+					location or socioeconomic status, has the skills and support to be a
+					positive force for change in their community.
+				</p>
+			</section>
 		</section>
 
 		<!-- Our Approach Section -->
 		<section
 			id="approach"
-			class="flex flex-col items-center justify-center bg-teal-50 py-14 px-6"
+			class="flex flex-col md:flex-row items-center justify-center bg-white py-8 px-5"
 		>
-			<h1 class="text-4xl font-semibold mb-4">Our Approach</h1>
-			<p class="text-center max-w-2xl text-lg">
-				LifeThought empowers community leaders worldwide by connecting them with
-				talented young adults and early-career professionals who offer
-				skills-based mentorship and hands-on support. Through a unique micro
-				"Service Grant" model, we create powerful, cross-cultural partnerships
-				that build sustainable impact for all involved.
-			</p>
+			<section class="flex flex-col items-center md:items-start justify-center">
+				<h1 class="text-4xl font-semibold mb-4">Our Approach</h1>
+				<p class="text-center md:text-left max-w-2xl text-lg">
+					LifeThought empowers community leaders worldwide by connecting them with
+					talented young adults and early-career professionals who offer
+					skills-based mentorship and hands-on support. Through a unique micro
+					"Service Grant" model, we create powerful, cross-cultural partnerships
+					that build sustainable impact for all involved.
+				</p>
+			</section>
+			<img
+				src="./src/images/Leah.png"
+				class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl"
+			/>
 		</section>
 
 		<!-- Join Us Section -->
