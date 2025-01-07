@@ -1,0 +1,217 @@
+<!-- Tailwind.css was used for styling. Tailwind allows you to use inline styling by assigning classes to each HTML element. -->
+<!-- To learn more about how to use Tailwind, go to https://tailwindcss.com/docs/installation -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Service Grants - Our Mission and Model</title>
+		<link rel="stylesheet" href="src/output.css" />
+		<link rel="icon" type="image/png" href="./src/images/Logo.png" />
+	</head>
+
+	<body class="text-gray-800 font-sans">
+		<!-- Nav Bar -->
+		<nav
+			class="bg-white text-black fixed top-0 left-0 right-0 drop-shadow-xl z-50"
+		>
+			<div class="flex items-center justify-between px-6 py-4">
+				<a href="./index.html"
+					><img src="./src/images/HorizontalLogo.png" class="max-w-60"
+				/></a>
+				<!-- Hamburger Icon -->
+				<button
+					id="menu-button"
+					class="block md:hidden text-2xl focus:outline-none"
+				>
+					&#9776;
+				</button>
+				<!-- Desktop Links -->
+				<div class="hidden md:flex space-x-6">
+					<a href="./index.html" class="hover:text-green-600">Home</a>
+					<a href="./page2.html" class="hover:text-green-600">Service Grants</a>
+				</div>
+			</div>
+			<!-- Mobile Links -->
+			<div
+				id="mobile-menu"
+				class="hidden flex-col space-y-4 px-6 py-4 md:hidden bg-white"
+			>
+				<a href="#header" class="hover:text-green-600 p-1">Home</a>
+				<a href="#join" class="hover:text-green-600 p-1">Join Us</a>
+				<a href="#approach" class="hover:text-green-600 p-1">Our Approach</a>
+				<a href="#mission" class="hover:text-green-600 p-1">Our Mission</a>
+			</div>
+		</nav>
+
+		<!-- Header Section -->
+		<header
+			id="header"
+			class="flex flex-col items-center justify-center bg-[#33804F] pt-52 pb-20 px-6 shadow-lg text-white"
+		>
+			<h1 class="text-6xl font-bold mb-4 animate-fade-in">
+				Service Grants – Our Mission and Model
+			</h1>
+		</header>
+
+		<!-- Our Vision -->
+		<section
+			id="vision"
+			class="flex flex-col sm:items-center md:flex-row items-center justify-center bg-white py-8 px-5"
+		>
+			<section
+				class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+			>
+				<h1 class="text-4xl font-semibold mb-4">Our Vision</h1>
+				<p class="text-center md:text-left max-w-2xl text-lg">
+					LifeThought International believes in a world where grassroots leaders
+					can shape their communities with confidence and sustainability. By
+					connecting passionate young adults with community-driven leaders
+					worldwide, we create a culture of shared growth and support that fuels
+					meaningful change.
+				</p>
+			</section>
+			<img
+				src="./src/images/Ethiopia.jpg"
+				class="md:w-2/6 sm:w-3/6 mb-6 md:mb-0 md:mr-6 rounded-xl"
+			/>
+		</section>
+
+		<!-- Our Micro Service Grant Model & Our Partners-->
+		<section
+			id="approach"
+			class="flex flex-col sm:items-center md:flex-row items-center justify-center bg-white py-8 px-5"
+		>
+		<!-- Our Micro Service Grant Model -->
+			<section
+				class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+			>
+				<h1 class="text-4xl font-semibold mb-4">
+					Our Micro Service Grant Model
+				</h1>
+				<p class="text-center md:text-justify max-w-2xl text-lg">
+					LifeThought's unique approach, the micro “Service Grant” model,
+					matches local project needs with volunteer skills. This model allows
+					us to provide resources such as project design, social media
+					development, language translation, educational materials, and more to
+					maximize the impact of community-driven projects. Volunteers work
+					remotely, sharing their unique skills to support in-country projects.
+				</p>
+			</section>
+			<!-- Our Partners -->
+			<section
+				class="flex flex-col items-center md:text-center sm:justify-center bg-[#AF5851] text-white py-8 px-5 rounded-xl"
+			>
+				<h1 class="text-4xl font-semibold mb-4">Our Partners</h1>
+				<p class="text-center md:text-justify max-w-2xl text-lg">
+					LifeThought collaborates with a diverse group of partners worldwide,
+					including schools, nonprofits, NGOs, government agencies, and
+					grassroots community groups. We focus on enhancing educational
+					opportunities, youth leadership, and community support for lasting,
+					positive change. Take a look at some of our recent projects (link to
+					page 3).
+				</p>
+			</section>
+		</section>
+
+		<!-- How the Micro Service Grant Works -->
+		<section
+			class="flex flex-col items-center sm:text-center md:items-center justify-center py-8 px-5"
+		>
+			<h1 class="text-6xl font-semibold mb-6">
+				How the Micro Service Grant Works
+			</h1>
+			<section class="flex flex-row flex-wrap justify-center gap-5 max-w-6xl">
+				<!-- Step 1 -->
+				<section
+					class="flex flex-col items-center sm:text-center md:items-start justify-center py-4 px-5 w-[300px] rounded-xl border border-gray-300"
+				>
+					<h4 class="text-2xl"><b>1. Project Application</b></h4>
+					<p class="text-xl">
+						Community leaders submit project ideas needing support.
+					</p>
+				</section>
+				<!-- Step 2 -->
+				<section
+					class="flex flex-col items-center sm:text-center md:items-start justify-center bg-[#AF5851] text-white py-4 px-5 w-[300px] rounded-xl"
+				>
+					<h4 class="text-2xl"><b>2. Project Selection</b></h4>
+					<p class="text-xl">
+						Selected projects are chosen based on community needs and impact.
+					</p>
+				</section>
+				<!-- Step 3 -->
+				<section
+					class="flex flex-col items-center sm:text-center md:items-start justify-center py-4 px-5 w-[300px] rounded-xl border border-gray-300"
+				>
+					<h4 class="text-2xl"><b>3. Project Profile Creation</b></h4>
+					<p class="text-xl">
+						We outline the project’s needs, skills required, and desired
+						outcomes.
+					</p>
+				</section>
+				<!-- Step 4 -->
+				<section
+					class="flex flex-col items-center sm:text-center md:items-start justify-center bg-[#AF5851] text-white py-4 px-5 w-[300px] rounded-xl"
+				>
+					<h4 class="text-2xl"><b>4. Volunteer Matching</b></h4>
+					<p class="text-xl">
+						Volunteers are matched with projects that align with their skills
+						and passions.
+					</p>
+				</section>
+				<!-- Step 5 -->
+				<section
+					class="flex flex-col items-center sm:text-center md:items-start justify-center py-4 px-5 w-[300px] rounded-xl border border-gray-300"
+				>
+					<h4 class="text-2xl"><b>5. Project Support & Completion</b></h4>
+					<p class="text-xl">
+						Volunteers remotely support the project, ensuring its successful
+						implementation and positive impact.
+					</p>
+				</section>
+			</section>
+		</section>
+
+		<!-- Footer Section -->
+		<footer
+			class="flex flex-col items-center justify-center bg-[#33804F] py-14 px-6 shadow-inner text-white"
+		>
+			<p class="text-center max-w-2xl text-lg">
+				LifeThought International is dedicated to fostering global change by
+				empowering people to manage their own grassroots social projects through
+				targeted, skills-based mentorship.
+			</p>
+			<br />
+			<p class="text-center max-w-2xl text-lg">
+				<b>Keep up to date with LifeThought projects:</b>
+				<a
+					class="hover:underline text-blue-300"
+					href="https://www.linkedin.com/company/lifethought-international/"
+					>LinkedIn</a
+				>,
+				<a
+					class="hover:underline text-blue-300"
+					href="https://www.facebook.com/100057323183488"
+					>Facebook</a
+				>,
+				<a
+					class="hover:underline text-blue-300"
+					href="https://www.instagram.com/lifethoughtinternational"
+					>Instagram</a
+				>
+			</p>
+		</footer>
+
+		<!-- JavaScript for Mobile Menu Toggle -->
+		<script>
+			const menuButton = document.getElementById('menu-button');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			menuButton.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+			});
+		</script>
+	</body>
+</html>

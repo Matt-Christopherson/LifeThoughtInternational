@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./page2.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'vision-bg': "url('./src/images/Ethiopia.jpg')",
+      },
+    },
   },
   plugins: [],
 }
