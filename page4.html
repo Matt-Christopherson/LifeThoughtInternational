@@ -1,0 +1,344 @@
+<!-- Tailwind.css was used for styling. Tailwind allows you to use inline styling by assigning classes to each HTML element. -->
+<!-- To learn more about how to use Tailwind, go to https://tailwindcss.com/docs/installation -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Our Team - Who We Are</title>
+		<link rel="stylesheet" href="src/output.css" />
+		<link rel="icon" type="image/png" href="./src/images/Logo.png" />
+	</head>
+
+	<body class="text-gray-800 font-sans">
+		<!-- Nav Bar -->
+		<nav
+			class="bg-white text-black fixed top-0 left-0 right-0 drop-shadow-xl z-50"
+		>
+			<div class="flex items-center justify-between px-6 py-4">
+				<a href="./index.html"
+					><img src="./src/images/HorizontalLogo.png" class="max-w-60"
+				/></a>
+				<!-- Hamburger Icon -->
+				<button
+					id="menu-button"
+					class="block md:hidden text-2xl focus:outline-none"
+				>
+					&#9776;
+				</button>
+				<!-- Desktop Links -->
+				<div class="hidden md:flex space-x-6">
+					<a href="./index.html" class="hover:text-green-600">Home</a>
+					<a href="./page2.html" class="hover:text-green-600">Service Grants</a>
+					<a href="./page3.html" class="hover:text-green-600">Projects</a>
+					<a href="./page4.html" class="hover:text-green-600">Our Team</a>
+				</div>
+			</div>
+			<!-- Mobile Links -->
+			<div
+				id="mobile-menu"
+				class="hidden flex-col space-y-4 px-6 py-4 md:hidden bg-white"
+			>
+				<a href="./index.html" class="hover:text-green-600 px-1 underline"
+					>Home</a
+				>
+				<a href="./page2.html" class="hover:text-green-600 px-1 underline"
+					>Service Grants</a
+				>
+				<a href="./page3.html" class="hover:text-green-600 px-1 underline"
+					>Projects</a
+				>
+				<a href="./page4.html" class="hover:text-green-600 px-1 underline"
+					>Our Team</a
+				>
+			</div>
+		</nav>
+
+		<!-- Header Section -->
+		<header
+			id="header"
+			class="flex flex-col items-center justify-center bg-[#33804F] pt-52 pb-20 px-6 shadow-lg text-white"
+		>
+			<h1 class="text-6xl font-bold mb-4 animate-fade-in">
+				Our Team - Who We Are
+			</h1>
+		</header>
+
+		<!-- Our Board of Directors -->
+		<section
+			id="vision"
+			class="flex flex-col sm:items-center items-center justify-center bg-white py-8 px-5 w-5/6 mx-auto"
+		>
+			<h1 class="text-4xl font-bold mb-4">Our Board of Directors</h1>
+			<div class="flex flex-row items-start mt-10">
+				<!-- Rochelle -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-3xl font-semibold mb-4">Rochelle Keogh, Ed.D.</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						With nearly three decades of experience in international education,
+						Rochelle has worked with thousands of educators worldwide, helping
+						transform community-driven ideas into impactful initiatives. Her
+						vision led her to found LifeThought International, connecting
+						grassroots leaders with emerging professionals to foster community
+						change. Rochelle holds a Doctorate in Higher Education Teaching, and
+						a Master’s degree in Teaching English to Speakers of Other
+						Languages. She has developed teacher training workshops for
+						educators in 89 countries, working with institutions like Fulbright,
+						the U.S. Department of State, and ministries of education globally.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+				<!-- Simon -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-3xl font-semibold mb-4">Simon Keogh, MBA</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						Simon holds an MBA focused on strategic change from Edinburgh
+						Business School and has spent 30 years honing his strategic
+						development skills, working with organizations from small nonprofits
+						to global companies like IBM and Walmart. He combines a deep
+						understanding of stakeholder needs and strategic planning to help
+						projects achieve sustainable goals. His true passion lies in
+						grassroots projects, where he believes strategic guidance can have
+						the biggest community impact.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+				<!-- Lindsay -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-3xl font-semibold mb-4">Lindsay Gassin</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						Lindsay graduated summa cum laude from Brigham Young University with
+						a degree in marriage and family science. For over twenty years she
+						has had the privilege to serve alongside thousands of youth and
+						young adults as a youth leader and mentor, and she currently serves
+						as president to a youth group organization over several hundred
+						youth in northwest Arkansas. She and her family have participated in
+						multiple medical missions to underprivileged areas all around the
+						world. She has a passion for empowering the rising generation and
+						helping those all around the world in need.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+			</div>
+		</section>
+
+		<!-- Our Executive Council and Rising Leaders -->
+		<section
+			id="vision"
+			class="flex flex-col sm:items-center items-center justify-center bg-white py-8 px-5 w-5/6 mx-auto"
+		>
+			<h1 class="text-4xl font-bold mb-4">
+				Our Executive Council and Rising Leaders
+			</h1>
+			<div class="flex flex-row items-start mt-10">
+				<!-- Leah -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-start text-3xl mb-4">
+						<b>Leah,</b> Director of International Education Projects
+					</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						Driven by a passion for international education, Leah serves as the
+						Director of International Education Projects. Leah studied Spanish
+						with a focus on literature and culture, along with Latin American
+						studies and Global Community Impact, and has 2.5 years of coursework
+						in Elementary Education and TEFL certification. With experience
+						teaching English to learners in four countries, Leah brings both
+						hands-on teaching skills and a global perspective to her work. Her
+						recent work in Tunisia has ignited her passion for mentoring young
+						teachers.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+				<!-- Abigail -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-start text-3xl mb-4">
+						<b>Abigail,</b> Director of Leadership Development
+					</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						Abigail is the Director of Leadership Development, where she’s
+						dedicated to empowering emerging leaders and developing our project
+						volunteers. A certified teacher in the gifted and talented program
+						at her local public school, Abigail brings a background in education
+						together with expertise in materials development, project
+						management, and youth leadership.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+				<!-- Alexander -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-start text-3xl mb-4">
+						<b>Alexander,</b> Director of Communications
+					</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						Alexander is dedicated to tackling the world’s toughest challenges
+						through impactful cross-cultural collaboration. A dual major in
+						Psychology and Chinese with minors in Global Business and Civic
+						Engagement Leadership, he is also pursuing a Master’s in
+						Professional Language (Chinese). He has led international research
+						teams, presented his findings at several international conferences,
+						competed in a global Chinese competition (where he was a finalist!),
+						and directed student leadership teams at his university.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+				<!-- Mirabella -->
+				<section
+					class="flex flex-col items-center sm:text-center md:text-justify justify-center px-5"
+				>
+					<h2 class="text-start text-3xl mb-4">
+						<b>Mirabella,</b> Director of Global Development Projects
+					</h2>
+					<p class="text-justify max-w-2xl text-lg">
+						Mirabella has a background in Public Health Promotion and Middle
+						Eastern Studies. She brings with her experience in project
+						management, research, academic writing, and a passion for all things
+						international, making her perfect for her role leading our global
+						development projects. Having served as the Student Body Director of
+						Diversity and Inclusion at her university, competed in Model United
+						Nations, and won several awards in national debate and mock trial
+						competitions, Mirabella is also an excellent mentor for our project
+						volunteers.
+					</p>
+					<img
+						src="./src/images/portrait placeholder.jpg"
+						class="w-full md:w-1/2 max-w-md mb-6 md:mb-0 md:mr-6 rounded-xl mt-5"
+					/>
+				</section>
+			</div>
+		</section>
+
+		<!-- Our Commitment to Professional Development  -->
+		<section
+			class="flex flex-col items-center md:text-center sm:justify-center bg-[#AF5851] text-white py-8 px-5 rounded-xl"
+		>
+			<h1 class="text-4xl font-semibold mb-4">
+				Our Commitment to Professional Development
+			</h1>
+			<p class="text-center md:text-justify max-w-2xl text-lg p-2">
+				With the values of continuous learning, innovation, and professional
+				growth as essential components of our mission, we are dedicated to
+				providing young staff members with meaningful opportunities for
+				professional development, skill enhancement, and leadership through
+				mentorship and real world experience. These emerging leaders serve in
+				important leadership roles in our organization, passing on what they are
+				learning by overseeing and mentoring project interns and volunteers.
+			</p>
+			<p class="text-center md:text-justify max-w-2xl text-lg p-2">
+				Recently, LifeThought young leaders have served as project directors,
+				led planning meetings, sourced international projects, and presented
+				LifeThought projects at international conferences! They have taken
+				courses in project management and nonprofit management. These young
+				people are gaining confidence and learning real world skills as they
+				collaborate to support international partners.
+			</p>
+		</section>
+
+		<!-- Our Project Volunteers -->
+		<section
+			class="flex flex-col items-center md:text-center sm:justify-center py-8 px-5 rounded-xl"
+		>
+			<h1 class="text-4xl font-semibold mb-4">Our Project Volunteers:</h1>
+			<p class="text-center md:text-justify max-w-2xl text-lg p-2">
+				With the values of continuous learning, innovation, and professional
+				growth as essential components of our mission, we are dedicated to
+				providing young staff members with meaningful opportunities for
+				professional development, skill enhancement, and leadership through
+				mentorship and real world experience. These emerging leaders serve in
+				important leadership roles in our organization, passing on what they are
+				learning by overseeing and mentoring project interns and volunteers.
+			</p>
+			<p class="text-center md:text-justify max-w-2xl text-lg p-2">
+				Recently, LifeThought young leaders have served as project directors,
+				led planning meetings, sourced international projects, and presented
+				LifeThought projects at international conferences! They have taken
+				courses in project management and nonprofit management. These young
+				people are gaining confidence and learning real world skills as they
+				collaborate to support international partners.
+			</p>
+			<h2 class="text-2xl font-medium p-5">Volunteers who worked on LifeThought projects in 2024 include:</h2>
+			<ul class="list-disc text-left">
+				<li class="text-lg">Curriculum and Instruction Specialist</li>
+				<li class="text-lg">TESOL Materials Development Specialist</li>
+				<li class="text-lg">Spanish Translation Team Lead</li>
+				<li class="text-lg">Spanish Translation Volunteers</li>
+				<li class="text-lg">French Translation Volunteers</li>
+				<li class="text-lg">Graphic Design Volunteers</li>
+				<li class="text-lg">Website Design Volunteers</li>
+				<li class="text-lg">Social Media Interns</li>
+				<li class="text-lg">International Partnerships Summer Interns (in Predeal, Romania)</li>
+				<li class="text-lg">Volunteer Engagement Coordinator</li>
+			</ul>
+		</section>
+
+		<!-- Footer Section -->
+		<footer
+			class="flex flex-col items-center justify-center bg-[#33804F] py-14 px-6 shadow-inner text-white"
+		>
+			<p class="text-center max-w-2xl text-lg">
+				LifeThought International is dedicated to fostering global change by
+				empowering people to manage their own grassroots social projects through
+				targeted, skills-based mentorship.
+			</p>
+			<br />
+			<p class="text-center max-w-2xl text-lg">
+				<b>Keep up to date with LifeThought projects:</b>
+				<a
+					class="hover:underline text-blue-300"
+					href="https://www.linkedin.com/company/lifethought-international/"
+					>LinkedIn</a
+				>,
+				<a
+					class="hover:underline text-blue-300"
+					href="https://www.facebook.com/100057323183488"
+					>Facebook</a
+				>,
+				<a
+					class="hover:underline text-blue-300"
+					href="https://www.instagram.com/lifethoughtinternational"
+					>Instagram</a
+				>
+			</p>
+		</footer>
+
+		<!-- JavaScript for Mobile Menu Toggle -->
+		<script>
+			const menuButton = document.getElementById('menu-button');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			menuButton.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+			});
+		</script>
+	</body>
+</html>
